@@ -7,4 +7,5 @@ from .models import JobApplication
 class JobApplicationList(ListView):
     queryset = JobApplication.objects.all()
     template_name = "application/jobapplication_list.html"
+    paginate_by = 6
 
