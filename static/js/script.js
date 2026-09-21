@@ -1,0 +1,1 @@
+console.log("ApplyTrack static JS loaded successfully!");
