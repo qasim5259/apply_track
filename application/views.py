@@ -53,3 +53,36 @@ def jobapplication_create(request):
         'application/jobapplication_form.html',
         {'form': form}
     )
+
+# Update an existing application
+@login_required
+def jobapplication_update(request, pk):
+    application = get_object_or_404(JobApplication, pk=pk, user=request.user)
+    if request.method == 'POST':
+        form = JobApplicationForm(request.POST, instance=application)
+        if form.is_valid():
+            form.save()
+            return redirect('jobapplication_list')
+    else:
+        form = JobApplicationForm(instance=application)
+
+    return render(
+        request,
+        'application/jobapplication_form.html',
+        {'form': form, 'edit_mode': True}
+    )
+
+
+# Delete an application
+@login_required
+def jobapplication_delete(request, pk):
+    application = get_object_or_404(JobApplication, pk=pk, user=request.user)
+    if request.method == 'POST':
+        application.delete()
+        return redirect('jobapplication_list')
+
+    return render(
+        request,
+        'application/jobapplication_confirm_delete.html',
+        {'application': application}
+    )
