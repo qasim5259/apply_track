@@ -86,3 +86,8 @@ def jobapplication_delete(request, pk):
         'application/jobapplication_confirm_delete.html',
         {'application': application}
     )
+
+def home(request):
+    if request.user.is_authenticated:
+        return redirect('jobapplication_list')
+    return render(request, 'application/home.html')
