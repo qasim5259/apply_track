@@ -16,3 +16,19 @@ body {
 .card:hover {
     transform: translateY(-3px);
 }
+
+/* Standard password requirements (visible but not alarming) */
+.helptext,
+form ul,
+.form-text {
+    color: #495057;
+    /* Dark, bold grey */
+    font-weight: 500;
+}
+
+/* Actual form errors (Django automatically uses the 'errorlist' class for failed validation) */
+ul.errorlist {
+    color: #dc3545 !important;
+    /* Bright red only for actual errors */
+    font-weight: bold;
+}
