@@ -7,6 +7,7 @@
             <h1 class="fw-bold">{{ application.job_title }}</h1>
             <h4 class="text-muted">{{ application.company }}</h4>
             <hr>
+
             <p class="card-text">
                 <strong>Status:</strong>
                 <span class="badge 
@@ -18,7 +19,40 @@
                     {{ application.get_status_display }}
                 </span>
             </p>
-            <a href="{% url 'jobapplication_list' %}" class="btn btn-secondary mt-3">Back to Applications</a>
+
+            {% if application.applied_date %}
+            <p><strong>Applied Date:</strong> {{ application.applied_date|date:"F d, Y" }}</p>
+            {% endif %}
+
+            <!-- Job Posting URL -->
+            <p><strong>Job Posting URL:</strong>
+                {% if application.job_url %}
+                <a href="{{ application.job_url }}" target="_blank" rel="noopener noreferrer">
+                    View Posting <i class="fas fa-external-link-alt ms-1"></i>
+                </a>
+                {% else %}
+                <span class="text-muted">No URL provided</span>
+                {% endif %}
+            </p>
+
+            <!-- Notes Section -->
+            <div class="mt-4">
+                <h5 class="fw-bold">Notes:</h5>
+                {% if application.notes %}
+                <div class="p-3 bg-light rounded border">
+                    <p class="mb-0" style="white-space: pre-wrap;">{{ application.notes }}</p>
+                </div>
+                {% else %}
+                <p class="text-muted fst-italic">No additional notes added for this application.</p>
+                {% endif %}
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="mt-4">
+                <a href="{% url 'jobapplication_update' application.pk %}" class="btn btn-warning me-2">Edit</a>
+                <a href="{% url 'jobapplication_delete' application.pk %}" class="btn btn-danger me-2">Delete</a>
+                <a href="{% url 'jobapplication_list' %}" class="btn btn-secondary">Back to Applications</a>
+            </div>
         </div>
     </div>
 </div>
