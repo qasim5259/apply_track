@@ -20,6 +20,8 @@ if os.path.isfile('env.py'):
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
+X_FRAME_OPTIONS = 'ALLOWALL'
+
 
 
 # Quick-start development settings - unsuitable for production
