@@ -264,8 +264,8 @@ Acceptance criteria:
 | :--- | :--- | :--- |
 | Home Page: home.html + base.html | ![validation](docs/html/base.html.png) | Pass |
 | Dashboard: jobapplication_list.html + base.html | ![validation](docs/html/dashboard.png) | Pass |
-| Application Detail: jobapplication_detail.html + base.html | ![validation](docs/html/) | Pass |
-|  | ![validation](docs/html/) | Pass |
-|  | ![validation](docs/html/) | Pass |
-|  | ![validation](docs/html/) | Pass |
-|  | ![validation](docs/html/) | Pass |
+| Application Detail: jobapplication_detail.html + base.html | ![validation](docs/html/detail.png) | Pass |
+| Add Application: jobapplication_form.html + base.html | ![validation](docs/html/add.png) | Pass |
+| Confirm Delete: jobapplication_confirm_delete.html | ![validation](docs/html/delete.png) | Pass |
+| Contact Page: contact/contact.html + base.html | ![validation](docs/html/contact.png) | Pass |
+| Login / Register: account/login.html / signup.html | ![validation](docs/html/login.png) | Pass |
