@@ -16,12 +16,23 @@ class JobApplicationForm(forms.ModelForm):
             'interview_date',
         ]
         widgets = {
-            'application_date': forms.DateInput(attrs={'type': 'date', 'class': 'form-control'}),
-            'interview_date': forms.DateInput(attrs={'type': 'date', 'class': 'form-control'}),
+            'application_date': forms.DateInput(
+                attrs={'type': 'date', 'class': 'form-control'}
+            ),
+            'interview_date': forms.DateInput(
+                attrs={'type': 'date', 'class': 'form-control'}
+            ),
             'company': forms.TextInput(attrs={'class': 'form-control'}),
             'job_title': forms.TextInput(attrs={'class': 'form-control'}),
             'location': forms.TextInput(attrs={'class': 'form-control'}),
             'status': forms.Select(attrs={'class': 'form-select'}),
-            'job_url': forms.URLInput(attrs={'class': 'form-control', 'placeholder': 'https://...'}),
-            'notes': forms.Textarea(attrs={'class': 'form-control', 'rows': 4}),
+            'job_url': forms.URLInput(
+                attrs={
+                    'class': 'form-control',
+                    'placeholder': 'https://...',
+                }
+            ),
+            'notes': forms.Textarea(
+                attrs={'class': 'form-control', 'rows': 4}
+            ),
         }

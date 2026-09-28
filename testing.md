@@ -269,3 +269,42 @@ Acceptance criteria:
 | Confirm Delete: jobapplication_confirm_delete.html | ![validation](docs/html/delete.png) | Pass |
 | Contact Page: contact/contact.html + base.html | ![validation](docs/html/contact.png) | Pass |
 | Login / Register: account/login.html / signup.html | ![validation](docs/html/login.png) | Pass |
+
+### CSS Validation
+
+| File | Screenshot | Result |
+| :--- | :--- | :--- |
+| style.css | ![validation](docs/css/styles.png) | Pass |
+
+### Python Validation 
+
+**ApplyTrack Core**
+
+| File | Screenshot | Result |
+| :--- | :--- | :--- |
+| settings.py | ![validation](docs/python/track/settings.png) | Pass |
+| urls.py | ![validation](docs/python/track/urls.png) | Pass |
+
+
+**Application**
+
+| File | Screenshot | Result |
+| :--- | :--- | :--- |
+| admin.py | ![validation](docs/python/app/admin.png) | Pass |
+| forms.py | ![validation](docs/python/app/form.png) | Pass |
+| models.py | ![validation](docs/python/app/models.png)| Pass |
+| urls.py | ![validation](docs/python/app/urls.png) | Pass |
+| views.py | ![validation](docs/python/app/views.png) | Pass |
+
+**Contact**
+
+| File | Screenshot | Result |
+| :--- | :--- | :--- |
+| admin.py | ![validation](docs/python/contact/admin.png) | Pass |
+| forms.py | ![validation](docs/python/contact/forms.png) | Pass |
+| models.py | ![validation](docs/python/contact/models.png)| Pass |
+| urls.py | ![validation](docs/python/contact/urls.png) | Pass |
+| views.py | ![validation](docs/python/contact/views.png) | Pass |
+
+
+
