@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-8 offset-md-2">
             <h1 class="fw-bold">{{ application.job_title }}</h1>
-            <h4 class="text-muted">{{ application.company }}</h4>
+            <h2 class="text-muted">{{ application.company }}</h2>
             <hr>
 
             <p class="card-text">
@@ -37,7 +37,7 @@
 
             <!-- Notes Section -->
             <div class="mt-4">
-                <h5 class="fw-bold">Notes:</h5>
+                <h3 class="fw-bold">Notes:</h3>
                 {% if application.notes %}
                 <div class="p-3 bg-light rounded border">
                     <p class="mb-0" style="white-space: pre-wrap;">{{ application.notes }}</p>

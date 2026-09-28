@@ -262,4 +262,10 @@ Acceptance criteria:
 
 | File | Screenshot | Result |
 | :--- | :--- | :--- |
-| base.html | ![validation](docs/html/base.html.png) | Pass |
+| Home Page: home.html + base.html | ![validation](docs/html/base.html.png) | Pass |
+| Dashboard: jobapplication_list.html + base.html | ![validation](docs/html/dashboard.png) | Pass |
+| Application Detail: jobapplication_detail.html + base.html | ![validation](docs/html/) | Pass |
+|  | ![validation](docs/html/) | Pass |
+|  | ![validation](docs/html/) | Pass |
+|  | ![validation](docs/html/) | Pass |
+|  | ![validation](docs/html/) | Pass |
