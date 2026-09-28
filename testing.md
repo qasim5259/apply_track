@@ -254,6 +254,6 @@ Acceptance criteria:
 | CRUD | Screenshot | Explanation |
 | :--- | :--- | :--- |
 | Create Applications | ![Add application ](docs/user-stories/us4.png)![application](docs/edge/application.png) | Logged in users can create new applications to add to their dashboards |
-| Read Applications | ![Read](docs/user-stories/us13.png) ![Read](docs/crud/read.png) | Logged in users can view and read through their applications on their dashboards and also when they click 'view' on the dashboard |
+| Read Applications | ![Read](docs/user-stories/us13.png) ![Read](docs/crud/read.png) | Logged in users can view their applications on the dashboard |
 | Update Applications | ![update](docs/crud/update1.png) ![update](docs/crud/update2.png) | Logged in users can update and edit applications |
 | Delete Applications | ![update](docs/crud/delete1.png) ![update](docs/crud/delete2.png) | Logged in users can delete their applications |
