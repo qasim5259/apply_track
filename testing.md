@@ -175,12 +175,15 @@ Acceptance criteria:
 Feature:
 
 Tablet:
+
 ![Responsive Design tablet view](docs/readme-images/tablet.png)
 
 Mobile:
+
 ![Responsive Design mobile view](docs/readme-images/mobile.png)
 
 Desktop:
+
 ![Responsive Design desktop view](docs/readme-images/desktop.png)
 
 **US12: Clear feedback**
@@ -235,4 +238,14 @@ Acceptance criteria:
 | Applications Page | ![Lighthouse result](docs/lighthouse/desktop-4.png) |
 | View Applications Page | ![Lighthouse result](docs/lighthouse/desktop-5.png) |
 | Contact Page | ![Lighthouse result](docs/lighthouse/desktop-6.png) |
+
+### Cross-Browser Testing
+
+| Browser | Screenshot | Result |
+| :--- | :--- | :--- |
+| Microsoft Edge | ![Homepage](docs/edge/home.png) | Pass |
+| Microsoft Edge | ![Register](docs/edge/register.png) | Pass |
+| Microsoft Edge | ![Login](docs/edge/login.png) | Pass |
+| Microsoft Edge | ![application](docs/edge/application.png) | Pass |
+| Microsoft Edge | ![contact](docs/edge/contact.png) | Pass |
 
