@@ -6,6 +6,26 @@ The primary objective of the testing process was to confirm that all core functi
 
 The following sections detail the code validation steps, performance and accessibility audits, manual feature test cases, and bug resolutions executed prior to production release.
 
+### User Stories/features
+
+| User Story | Feature |
+| :--- | :--- | 
+| As a new user, I want to register for an account, so that I can use ApplyTrack to manage my job applications.
+
+Acceptance criteria:
+
+- [x] User can enter a username.
+- [x] User can enter an email address.
+- [x] User can create a password.
+- [x] User must confirm their password.
+- [x] Account is created when valid information is submitted.
+- [x] User receives an appropriate error if the information is invalid.  | ![Feature](docs/lighthouse/desktop-1.png) |
+
+
+
+
+
+
 ### Mobile Lighthouse Testing
 
 
